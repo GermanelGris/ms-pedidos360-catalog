@@ -1,0 +1,21 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: ms-pedidos360-catalog
+  datasource:
+    # Local: MySQL en Docker (infra/local). En AWS: DB_HOST = endpoint de la RDS
+    url: jdbc:mysql://${DB_HOST:localhost}:3306/pedidos360_catalog?createDatabaseIfNotExist=true
+    username: ${DB_USER:root}
+    password: ${DB_PASSWORD:root}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
