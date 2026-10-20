@@ -36,6 +36,6 @@ MySQL (Amazon RDS en AWS, Docker en local). Schema `pedidos360_catalog`, tabla `
 
 ## Autores
 
-Germán Maraboli & Camila Vera
+Germán Marabolí, Sebastián Velez & Camila Vera
 
 Proyecto Pedidos360 · DSY1107 Desarrollo Cloud Native I · Duoc UC
